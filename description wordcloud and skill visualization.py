@@ -20,16 +20,12 @@ from nltk.stem import WordNetLemmatizer
 import nltk
 from multiprocessing import cpu_count
 
-# Ensure you have the necessary libraries installed:
-# pip install matplotlib wordcloud scikit-learn spacy nltk seaborn gensim pyLDAvis
 
 # Download required NLTK data
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 nltk.download('stopwords')
 
-# Download the spaCy English model if you haven't already:
-# python -m spacy download en_core_web_sm
 
 def simple_tokenize(text):
     return re.findall(r'\b\w+\b', text.lower())
