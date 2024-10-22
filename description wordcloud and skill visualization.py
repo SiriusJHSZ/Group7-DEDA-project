@@ -49,7 +49,7 @@ def remove_boilerplate(text):
         r'this job description.*?(?=\n|\Z)',
         r'compensation provided obtaining.*?(?=\n|\Z)',
         r'provided obtaining rating.*?(?=\n|\Z)',
-        # Add more patterns as needed
+       
     ]
     for pattern in boilerplate_patterns:
         text = re.sub(pattern, '', text, flags=re.IGNORECASE | re.DOTALL)
